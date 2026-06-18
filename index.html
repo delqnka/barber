@@ -50,21 +50,34 @@
 </header>
 
 <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
-  <nav aria-label="Мобилна навигация">
-    <ul>
-      <li><a href="#home">Начало</a></li>
-      <li><a href="#about">За нас</a></li>
-      <li><a href="#services">Услуги</a></li>
-      <li><a href="#gallery">Галерия</a></li>
-      <li><a href="#reviews">Отзиви</a></li>
-      <li><a href="#contact">Контакти</a></li>
-      <li><a class="drawer-cta" href="#book">Резервирай онлайн</a></li>
-    </ul>
+  <div class="drawer-panel">
+    <div class="drawer-top">
+      <a href="#home" class="logo" aria-label="Начало">
+        <span class="logo-text">Салон <em>Сухайб</em></span>
+      </a>
+      <button class="drawer-close" id="drawerClose" aria-label="Затвори меню">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+
+    <nav aria-label="Мобилна навигация">
+      <ul>
+        <li><a href="#home">Начало</a></li>
+        <li><a href="#about">За нас</a></li>
+        <li><a href="#services">Услуги</a></li>
+        <li><a href="#gallery">Галерия</a></li>
+        <li><a href="#reviews">Отзиви</a></li>
+        <li><a href="#contact">Контакти</a></li>
+      </ul>
+    </nav>
+
+    <a class="drawer-cta" href="#book">Резервирай онлайн</a>
+
     <div class="drawer-foot">
       <a href="tel:+359876140020">087 614 0020</a>
-      <span>ул. „Цар Симеон“ 73, София</span>
+      <span>ул. „Цар Симеон" 73, София</span>
     </div>
-  </nav>
+  </div>
 </div>
 
 <main id="main">
@@ -88,7 +101,7 @@
     </h1>
 
     <p class="hero-sub reveal">
-      От 2015 година Сухайб създава прически и оформя брада с прецизност, която клиентите наричат „моят втори дом“. 242 петзвездни отзива в Google говорят сами.
+      От 2015 година Сухайб създава прически и оформя брада с прецизност, която клиентите наричат „моят втори дом". 242 петзвездни отзива в Google говорят сами.
     </p>
 
     <div class="hero-cta reveal">
@@ -123,7 +136,7 @@
 
 <section class="section section-about" id="about">
   <div class="container about-grid">
-    <div class="about-media reveal">
+    <div class="about-media reveal-left">
       <div class="about-media-frame">
         <img src="soh2.webp" alt="Майстор Сухайб в салона" loading="lazy"/>
       </div>
@@ -268,7 +281,7 @@
         Сухайб е лицето и душата на салона. Стилист с над 10 години опит и международна биография, който превръща всяка визита в личен ритуал. Клиентите казват, че неговите ръце познават косата им по‑добре от тях самите.
       </p>
       <blockquote class="reveal">
-        „Перфекционист във всяко отношение. Истински професионалист, който ще те изслуша и ще предложи най‑добрия стил за теб.“
+        „Перфекционист във всяко отношение. Истински професионалист, който ще те изслуша и ще предложи най‑добрия стил за теб."
         <cite>Цветелин · Google</cite>
       </blockquote>
       <div class="master-tags reveal">
@@ -276,7 +289,7 @@
       </div>
     </div>
 
-    <div class="master-media reveal">
+    <div class="master-media reveal-right">
       <div class="master-card master-card-a">
         <img src="soh3.webp" alt="Резултат от салона" loading="lazy"/>
       </div>
@@ -296,39 +309,53 @@
       <p class="section-lead reveal">Подбрани кадри от ежедневието и работата на салона.</p>
     </div>
 
-    <div class="gallery-mosaic">
-      <a class="g-item g-1 reveal" href="soh1.webp">
-        <img src="soh1.webp" alt="Кадър от салон Сухайб" loading="lazy"/>
-        <span class="g-overlay" aria-hidden="true"></span>
-      </a>
-      <a class="g-item g-2 reveal" href="soh2.webp">
-        <img src="soh2.webp" alt="Стайлинг в салона" loading="lazy"/>
-        <span class="g-overlay" aria-hidden="true"></span>
-      </a>
-      <a class="g-item g-3 reveal" href="soh3.webp">
-        <img src="soh3.webp" alt="Финална прическа" loading="lazy"/>
-        <span class="g-overlay" aria-hidden="true"></span>
-      </a>
-      <a class="g-item g-4 reveal" href="soh4.webp">
-        <img src="soh4.webp" alt="Атмосфера в салона" loading="lazy"/>
-        <span class="g-overlay" aria-hidden="true"></span>
-      </a>
-      <a class="g-item g-5 reveal" href="soh5.webp">
-        <img src="soh5.webp" alt="Авторски стил" loading="lazy"/>
-        <span class="g-overlay" aria-hidden="true"></span>
-      </a>
-      <a class="g-item g-6 reveal" href="soh6.webp">
-        <img src="soh6.webp" alt="Работен момент" loading="lazy"/>
-        <span class="g-overlay" aria-hidden="true"></span>
-      </a>
-      <a class="g-item g-7 reveal" href="soh7.jpg">
-        <img src="soh7.jpg" alt="Завършен look" loading="lazy"/>
-        <span class="g-overlay" aria-hidden="true"></span>
-      </a>
-      <a class="g-item g-8 reveal" href="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=1200&q=80">
-        <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=800&q=80" alt="Мъжка прическа inspiration" loading="lazy"/>
-        <span class="g-overlay" aria-hidden="true"></span>
-      </a>
+    <div class="gallery-slider-wrap reveal">
+      <div class="gallery-slider" id="gallerySlider" aria-label="Галерия от снимки">
+        <div class="gs-track" id="gsTrack">
+          <div class="gs-slide">
+            <img src="soh1.webp" alt="Кадър от салон Сухайб" loading="lazy"/>
+            <div class="gs-overlay" aria-hidden="true"></div>
+          </div>
+          <div class="gs-slide">
+            <img src="soh2.webp" alt="Стайлинг в салона" loading="lazy"/>
+            <div class="gs-overlay" aria-hidden="true"></div>
+          </div>
+          <div class="gs-slide">
+            <img src="soh3.webp" alt="Финална прическа" loading="lazy"/>
+            <div class="gs-overlay" aria-hidden="true"></div>
+          </div>
+          <div class="gs-slide">
+            <img src="soh4.webp" alt="Атмосфера в салона" loading="lazy"/>
+            <div class="gs-overlay" aria-hidden="true"></div>
+          </div>
+          <div class="gs-slide">
+            <img src="soh5.webp" alt="Авторски стил" loading="lazy"/>
+            <div class="gs-overlay" aria-hidden="true"></div>
+          </div>
+          <div class="gs-slide">
+            <img src="soh6.webp" alt="Работен момент" loading="lazy"/>
+            <div class="gs-overlay" aria-hidden="true"></div>
+          </div>
+          <div class="gs-slide">
+            <img src="soh7.jpg" alt="Завършен look" loading="lazy"/>
+            <div class="gs-overlay" aria-hidden="true"></div>
+          </div>
+          <div class="gs-slide">
+            <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=800&q=80" alt="Мъжка прическа" loading="lazy"/>
+            <div class="gs-overlay" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gs-ui">
+        <button class="gs-arrow gs-arrow-prev" id="gsPrev" aria-label="Предишна снимка">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="gs-dots" id="gsDots" role="tablist" aria-label="Избери снимка"></div>
+        <button class="gs-arrow gs-arrow-next" id="gsNext" aria-label="Следваща снимка">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M10 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
     </div>
   </div>
 </section>
@@ -343,43 +370,79 @@
     </div>
 
     <div class="styles-row">
-      <article class="style-card reveal">
-        <div class="style-img">
-          <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=900&q=80" alt="Класически fade" loading="lazy"/>
-        </div>
-        <div class="style-info">
-          <h3>Classic Fade</h3>
-          <p>Чист преход, кратки страни, форма която работи и в офиса, и навън.</p>
-        </div>
-      </article>
-
-      <article class="style-card reveal">
-        <div class="style-img">
-          <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=900&q=80" alt="Текстуриран кроп" loading="lazy"/>
-        </div>
-        <div class="style-info">
-          <h3>Textured Crop</h3>
-          <p>Текстура и движение в горната част, подчертана линия отпред.</p>
-        </div>
-      </article>
-
-      <article class="style-card reveal">
-        <div class="style-img">
-          <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=900&q=80" alt="Smooth mullet" loading="lazy"/>
-        </div>
-        <div class="style-info">
-          <h3>Smooth Mullet</h3>
-          <p>Модерна интерпретация на mullet с мек преход и удължен тил.</p>
+      <article class="style-card">
+        <div class="style-card-inner">
+          <div class="style-card-front">
+            <div class="style-img">
+              <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=900&q=80" alt="Класически fade" loading="lazy"/>
+            </div>
+            <div class="style-info">
+              <h3>Classic Fade</h3>
+              <p class="style-hint">Задръж за детайли</p>
+            </div>
+          </div>
+          <div class="style-card-back">
+            <h3>Classic Fade</h3>
+            <p>Чист преход, кратки страни, форма която работи и в офиса, и навън. Вечна класика.</p>
+            <a href="#book" class="btn btn-primary">Запази час</a>
+          </div>
         </div>
       </article>
 
-      <article class="style-card reveal">
-        <div class="style-img">
-          <img src="https://images.unsplash.com/photo-1635273051937-e83b08fc9e63?w=900&q=80" alt="Korean style" loading="lazy"/>
+      <article class="style-card">
+        <div class="style-card-inner">
+          <div class="style-card-front">
+            <div class="style-img">
+              <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=900&q=80" alt="Текстуриран кроп" loading="lazy"/>
+            </div>
+            <div class="style-info">
+              <h3>Textured Crop</h3>
+              <p class="style-hint">Задръж за детайли</p>
+            </div>
+          </div>
+          <div class="style-card-back">
+            <h3>Textured Crop</h3>
+            <p>Текстура и движение в горната част, подчертана линия отпред. Модерен и лесен за поддръжка.</p>
+            <a href="#book" class="btn btn-primary">Запази час</a>
+          </div>
         </div>
-        <div class="style-info">
-          <h3>Korean Style</h3>
-          <p>Леки вълни, обем отгоре, нежна асиметрия. Тренд, който стои чисто.</p>
+      </article>
+
+      <article class="style-card">
+        <div class="style-card-inner">
+          <div class="style-card-front">
+            <div class="style-img">
+              <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=900&q=80" alt="Smooth mullet" loading="lazy"/>
+            </div>
+            <div class="style-info">
+              <h3>Smooth Mullet</h3>
+              <p class="style-hint">Задръж за детайли</p>
+            </div>
+          </div>
+          <div class="style-card-back">
+            <h3>Smooth Mullet</h3>
+            <p>Модерна интерпретация на mullet с мек преход и удължен тил. Специалитет на Сухайб.</p>
+            <a href="#book" class="btn btn-primary">Запази час</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="style-card">
+        <div class="style-card-inner">
+          <div class="style-card-front">
+            <div class="style-img">
+              <img src="https://images.unsplash.com/photo-1635273051937-e83b08fc9e63?w=900&q=80" alt="Korean style" loading="lazy"/>
+            </div>
+            <div class="style-info">
+              <h3>Korean Style</h3>
+              <p class="style-hint">Задръж за детайли</p>
+            </div>
+          </div>
+          <div class="style-card-back">
+            <h3>Korean Style</h3>
+            <p>Леки вълни, обем отгоре, нежна асиметрия. Тренд, който стои изключително чисто.</p>
+            <a href="#book" class="btn btn-primary">Запази час</a>
+          </div>
         </div>
       </article>
     </div>
@@ -406,37 +469,37 @@
 
         <article class="review-card">
           <div class="review-stars" aria-hidden="true">★★★★★</div>
-          <p>„Моят втори дом. Тук се успокоявам, всичко винаги е на ниво и съм адски доволен.“</p>
+          <p>„Моят втори дом. Тук се успокоявам, всичко винаги е на ниво и съм адски доволен."</p>
           <footer><strong>Димитър Ангелов</strong><span>преди 2 години</span></footer>
         </article>
 
         <article class="review-card">
           <div class="review-stars" aria-hidden="true">★★★★★</div>
-          <p>„Перфекционист във всяко отношение. Най‑добрият фризьор, при когото жена може да се довери на опитните му ръце.“</p>
+          <p>„Перфекционист във всяко отношение. Най‑добрият фризьор, при когото жена може да се довери на опитните му ръце."</p>
           <footer><strong>P. V.</strong><span>преди 3 години</span></footer>
         </article>
 
         <article class="review-card">
           <div class="review-stars" aria-hidden="true">★★★★★</div>
-          <p>„Прическа на тийнейджър момче, 100 точки. Истински професионалист, ще се връщаме всеки път с огромно удоволствие.“</p>
+          <p>„Прическа на тийнейджър момче, 100 точки. Истински професионалист, ще се връщаме всеки път с огромно удоволствие."</p>
           <footer><strong>Милена Гайдова</strong><span>преди година</span></footer>
         </article>
 
         <article class="review-card">
           <div class="review-stars" aria-hidden="true">★★★★★</div>
-          <p>„Sohay speaks English very well since he lived in NYC before. Very good to do smooth mullet or Korean style.“</p>
+          <p>„Sohay speaks English very well since he lived in NYC before. Very good to do smooth mullet or Korean style."</p>
           <footer><strong>Valentina Aloisio</strong><span>преди 2 години</span></footer>
         </article>
 
         <article class="review-card">
           <div class="review-stars" aria-hidden="true">★★★★★</div>
-          <p>„Очарован съм от вниманието и мнението. Фризьорът ме слушаше внимателно и предложи най‑добрия стил за моята визия.“</p>
+          <p>„Очарован съм от вниманието и мнението. Фризьорът ме слушаше внимателно и предложи най‑добрия стил за моята визия."</p>
           <footer><strong>Цветелин Антов</strong><span>преди 3 години</span></footer>
         </article>
 
         <article class="review-card">
           <div class="review-stars" aria-hidden="true">★★★★★</div>
-          <p>„Намерих своя фризьор. Много мил, с поглед към детайла и качество, което усещаш още с първото посещение.“</p>
+          <p>„Намерих своя фризьор. Много мил, с поглед към детайла и качество, което усещаш още с първото посещение."</p>
           <footer><strong>Елена</strong><span>преди година</span></footer>
         </article>
 
@@ -469,7 +532,7 @@
         </li>
         <li class="reveal">
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s-7-6.5-7-12a7 7 0 0114 0c0 5.5-7 12-7 12z" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="9" r="2.5" stroke="currentColor" stroke-width="1.8"/></svg>
-          ул. „Цар Симеон“ 73, 1202 София
+          ул. „Цар Симеон" 73, 1202 София
         </li>
         <li class="reveal">
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4h4l2 5l-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
@@ -557,7 +620,7 @@
 
       <div class="contact-block reveal">
         <h4>Адрес</h4>
-        <p>ул. „Цар Симеон“ 73<br/>1202 София център</p>
+        <p>ул. „Цар Симеон" 73<br/>1202 София център</p>
       </div>
 
       <div class="contact-block reveal">
@@ -623,7 +686,7 @@
       <h5>Контакти</h5>
       <ul>
         <li><a href="tel:+359876140020">087 614 0020</a></li>
-        <li>ул. „Цар Симеон“ 73, София</li>
+        <li>ул. „Цар Симеон" 73, София</li>
         <li>Всеки ден · 10:00 до 20:00</li>
       </ul>
     </div>
@@ -656,5 +719,114 @@
 </button>
 
 <script src="script.js"></script>
+
+<!-- GSAP + ScrollTrigger -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+(function() {
+  if (typeof gsap === 'undefined' || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  // ── Hero title — 3D words reveal ──────────────────────────────
+  const lines = document.querySelectorAll('.reveal-line');
+  gsap.set(lines, { transformPerspective: 900 });
+  gsap.from(lines, {
+    rotateX: -55, y: 60, opacity: 0, transformOrigin: 'top center',
+    duration: 1.1, ease: 'expo.out',
+    stagger: 0.14, delay: 0.2
+  });
+
+  // ── Service cards — 3D stagger scroll entry ───────────────────
+  gsap.from('.service-card', {
+    scrollTrigger: {
+      trigger: '.services-grid',
+      start: 'top 82%',
+    },
+    rotateX: -22, y: 55, opacity: 0,
+    transformPerspective: 800, transformOrigin: 'top center',
+    duration: 0.9, ease: 'expo.out',
+    stagger: 0.10,
+    clearProps: 'all'
+  });
+
+  // ── Style cards — 3D float in from sides ──────────────────────
+  gsap.from('.style-card:nth-child(odd)', {
+    scrollTrigger: { trigger: '.styles-row', start: 'top 80%' },
+    x: -50, rotateY: 12, opacity: 0,
+    transformPerspective: 900, duration: 1, ease: 'expo.out',
+    stagger: 0.15, clearProps: 'all'
+  });
+  gsap.from('.style-card:nth-child(even)', {
+    scrollTrigger: { trigger: '.styles-row', start: 'top 80%' },
+    x: 50, rotateY: -12, opacity: 0,
+    transformPerspective: 900, duration: 1, ease: 'expo.out',
+    stagger: 0.15, clearProps: 'all'
+  });
+
+  // ── About image — parallax depth on scroll ────────────────────
+  gsap.to('.about-media-frame img', {
+    scrollTrigger: {
+      trigger: '.section-about',
+      start: 'top bottom', end: 'bottom top',
+      scrub: 1.5
+    },
+    y: -60, ease: 'none'
+  });
+
+  // ── Master cards — staggered float ───────────────────────────
+  gsap.from('.master-card', {
+    scrollTrigger: { trigger: '.master-grid', start: 'top 78%' },
+    y: 80, opacity: 0, rotateX: -10,
+    transformPerspective: 700,
+    duration: 1.1, ease: 'expo.out',
+    stagger: 0.2, clearProps: 'all'
+  });
+
+  // ── Section eyebrows — slide up sharp ────────────────────────
+  gsap.utils.toArray('.section-eyebrow').forEach(el => {
+    gsap.from(el, {
+      scrollTrigger: { trigger: el, start: 'top 88%' },
+      y: 20, opacity: 0, duration: 0.7, ease: 'power3.out',
+      clearProps: 'all'
+    });
+  });
+
+  // ── Review cards — horizontal 3D scroll ──────────────────────
+  gsap.from('.review-card', {
+    scrollTrigger: { trigger: '.reviews-track', start: 'top 85%' },
+    x: 40, rotateY: -8, opacity: 0,
+    transformPerspective: 700, duration: 0.85, ease: 'expo.out',
+    stagger: 0.08, clearProps: 'all'
+  });
+
+  // ── 3D tilt on service cards (pointer: fine only) ─────────────
+  if (matchMedia('(pointer: fine)').matches) {
+    document.querySelectorAll('.service-card').forEach(card => {
+      card.addEventListener('mousemove', e => {
+        const r = card.getBoundingClientRect();
+        const cx = (e.clientX - r.left) / r.width  - 0.5;
+        const cy = (e.clientY - r.top)  / r.height - 0.5;
+        gsap.to(card, {
+          rotateY: cx * 12, rotateX: -cy * 8,
+          transformPerspective: 700, transformOrigin: 'center center',
+          duration: 0.4, ease: 'power2.out'
+        });
+      });
+      card.addEventListener('mouseleave', () => {
+        gsap.to(card, { rotateY: 0, rotateX: 0, duration: 0.6, ease: 'expo.out' });
+      });
+    });
+  }
+
+  // ── Touch flip for style cards (mobile) ──────────────────────
+  if (matchMedia('(pointer: coarse)').matches) {
+    document.querySelectorAll('.style-card').forEach(card => {
+      card.addEventListener('click', () => card.classList.toggle('flipped'));
+    });
+  }
+})();
+</script>
 </body>
 </html>
